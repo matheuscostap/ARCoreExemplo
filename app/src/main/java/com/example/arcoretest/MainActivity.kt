@@ -20,5 +20,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AugmentedImageActivity::class.java)
             startActivity(intent)
         }
+
+        btn_download_gltf.setOnClickListener {
+            val intent = Intent(this, DownloadActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

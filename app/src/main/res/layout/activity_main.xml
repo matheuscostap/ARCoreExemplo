@@ -12,31 +12,38 @@
             android:text="Basic Model"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/btn_augmented_image" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintVertical_chainStyle="packed"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btn_augmented_image"
+            app:layout_constraintVertical_chainStyle="packed" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
 
     <Button
             android:id="@+id/btn_augmented_image"
             android:text="Augmented Image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/btn_download_gltf"
-            app:layout_constraintTop_toBottomOf="@+id/btn_basic_model" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/btn_basic_model"
+            app:layout_constraintBottom_toTopOf="@+id/btn_download_gltf" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
 
     <Button
             android:text="Download GLTF"
             android:id="@+id/btn_download_gltf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_augmented_image"
+            app:layout_constraintBottom_toTopOf="@+id/btn_augmented_faces" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+
+    <Button
+            android:text="Augmented Faces"
+            android:id="@+id/btn_augmented_faces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_augmented_image" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_download_gltf" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
 
 </android.support.constraint.ConstraintLayout>

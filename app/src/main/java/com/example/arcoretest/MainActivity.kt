@@ -25,5 +25,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DownloadActivity::class.java)
             startActivity(intent)
         }
+
+        btn_augmented_faces.setOnClickListener {
+            val intent = Intent(this, FaceActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

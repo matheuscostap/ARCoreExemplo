@@ -66,3 +66,15 @@ sceneform.asset('sampledata/matheus/matheus.obj',
         'default',
         'sampledata/matheus/matheus.sfa',
         'src/main/assets/matheus')
+
+
+sceneform.asset('sampledata/faces/face.fbx',
+        'default',
+        'sampledata/faces/face.sfa',
+        'src/main/assets/face')
+
+
+sceneform.asset('sampledata/oculos/oculos.fbx',
+        'default',
+        'sampledata/oculos/oculos.sfa',
+        'src/main/assets/oculos')
